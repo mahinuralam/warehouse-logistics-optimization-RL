@@ -1,0 +1,46 @@
+About Dataset
+This dataset captures essential information for analyzing and managing warehouse inventory and logistics operations. It reflects real-world warehouse conditions across 3,204 records from the year 2024, including data on inventory levels, demand patterns, item storage locations, handling costs, and operational performance.
+
+It is intended to support tasks such as layout planning, inventory control, demand forecasting, and warehouse performance evaluation. By providing comprehensive metrics and performance indicators, this dataset enables data-driven decision-making for efficient warehouse management.
+
+🎯 Purpose
+This dataset is suitable for:
+
+Analyzing warehouse space and inventory usage
+
+Forecasting demand and restocking needs
+
+Monitoring stock availability and turnover
+
+Evaluating warehouse performance using key indicators
+
+Supporting logistics planning and inventory simulations
+
+🔑 Target Variable
+KPI_score (float, 0–1+): A composite performance score calculated from factors such as fulfillment rate, stockout frequency, layout efficiency, inventory turnover, and holding cost. This variable reflects the overall operational efficiency of each inventory item.
+
+🌟 Key Features
+Feature Description
+item_id Unique identifier for each inventory item
+category Item type or product category
+stock_level Current quantity of the item in stock
+reorder_point Threshold at which the item should be reordered
+reorder_frequency_days Typical interval (in days) between restocking
+lead_time_days Delivery time required after placing a reorder
+daily_demand Average daily demand for the item
+demand_std_dev Demand variability across recent periods
+item_popularity_score Normalized score representing historical demand
+storage_location_id Identifier for the item’s storage location
+zone Warehouse zone where the item is stored
+picking_time_seconds Time needed to retrieve the item from its location
+handling_cost_per_unit Cost associated with handling one unit of the item
+unit_price Selling price per unit of the item
+holding_cost_per_unit_day Daily storage cost per unit
+stockout_count_last_month Count of stockouts in the last 30 days
+order_fulfillment_rate Percentage of orders successfully fulfilled
+total_orders_last_month Total orders received for this item in a month
+turnover_ratio Sales-to-inventory ratio indicating stock movement
+layout_efficiency_score Efficiency of the storage layout for the item
+last_restock_date Date of the most recent inventory replenishment (in 2024)
+forecasted_demand_next_7d Estimated demand for the next 7 days
+KPI_score Performance score used as the target variable
